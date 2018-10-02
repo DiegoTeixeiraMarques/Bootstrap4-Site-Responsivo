@@ -7,8 +7,11 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
-    <link rel="stylesheet" href="node_modules/bootstrap/scss/style.scss"/>
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css"/>
     <title>Site Responsivo</title>
+
+    <!-- compilar arquivos sass -> no cmd -> sass --watch node_modules/bootstrap/scss:node_modules/bootstrap/compiler -->
+
   </head>
   
   <body>
@@ -71,41 +74,43 @@
             </div>
         </nav>
 
+        <!-- Inpicio carrossel -->
         <div id="carouselSite" class="carousel slide" data-ride="carousel">
 
             <ol class="carousel-indicators">
                 <li data-target="#carouselSite" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselSite" data-slide-to="1"></li>
                 <li data-target="#carouselSite" data-slide-to="2"></li>
-
             </ol>
+
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="imgs/slide-01.jpg" class="img-fluig d-block">
+                    <img src="imgs/slide-01.jpg" class="img-fluig d-block text-dark">
 
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3>What is Lorem Ipsum?</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="carousel-caption d-none d-md-block text-dark">
+                        <h1>What is Lorem Ipsum?</h1>
+                        <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     </div>
                 </div>
 
                 <div class="carousel-item">
                     <img src="imgs/slide-02.jpg" class="img-fluig d-block">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3>What is Lorem Ipsum?</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="carousel-caption d-none d-md-block text-dark">
+                        <h1>What is Lorem Ipsum?</h1>
+                        <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     </div>
                 </div>
 
                 <div class="carousel-item">
                     <img src="imgs/slide-03.jpg" class="img-fluig d-block">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h3>What is Lorem Ipsum?</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="carousel-caption d-none d-md-block text-dark">
+                        <h1>What is Lorem Ipsum?</h1>
+                        <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     </div>
                 </div>
             </div>
             
+            <!-- Botões para passas imagens no carrosel -->
             <a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon"></span>
                 <span class="sr-only">Anterior</span>  
@@ -114,6 +119,102 @@
                 <span class="carousel-control-next-icon"></span>
                 <span class="sr-only">Avançar</span>
             </a>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-14 text-center my-5">
+                    <h1 class="display-3">Bem-vindo</h1>
+                    <p>Você está na página inicial do projeto site responsivo</p>
+                </div>
+            </div>
+
+            <!-- Menu vertical logo após titulo de apresentação do site -->
+            <div class="row mb-5">
+                <div class="col-3">
+                    <nav id="navbarVertical" class="navbar navbar-light bg-light">
+                        <nav class="nav nav-pills flex-column">
+                            
+                            <a class="nav-link" href="#item1">Topico 1</a>
+                            <!-- Submenus -->
+                                <nav class="nav nav-pills flex-column">
+                                    <a class="nav-link ml-3" href="#item1-1">Topico 1.1</a>
+                                    <a class="nav-link ml-3" href="#item1-2">Tpico 1.2</a>
+                                </nav>
+
+                            <a class="nav-link  my-2" href="#item2">Topico 2</a>
+
+                            <a class="nav-link  my-2" href="#item3">Topico 3</a>
+                            <!-- Submenus -->
+                                <nav class="nav nav-pills flex-column">
+                                    <a class="nav-link ml-3" href="#item3-1">Topico 3.1</a>
+                                    <a class="nav-link ml-3" href="#item3-2">Topico 3.2</a>
+                                </nav>
+                        </nav>
+                    </nav>  
+                </div>
+
+                <div class="col-9">
+                    <div data-spy="scroll" data-target="#navbarVertical" data-offset="0" class="scrollspySite">
+                        
+                        <h4 id="item1">Item 01</h4>
+                        <p>Testante menu vertical e seu oink com as informações contidades nas divs
+                            okdngksnaegkiasdng[]ksad ojksdbnvgósdav dsv asojdv odvbsd osad boj sdafbo´
+                            as dbijsa bisaj bgpiS GVBJSD IPVUB D´JV SDIJ VS´D VJSD VJBA  óisjd evjsd 
+                            lisaudbvpisudbvújdsbv´bsd´vo  isdpuyvbsd vs dviu asuedhf iuased sde  d posidyfv
+                            b pisdubíudsfs ipdv sdvipbsdv sdpiv dvpdsv asd vd vspiduv d sdvpdv pdsiuv bdsvi
+                        </p>
+
+                        <h5 id="item1-1">Item 1-1</h5>
+                        <p>Testante menu vertical e seu oink com as informações contidades nas divs
+                            okdngksnaegkiasdng[]ksad ojksdbnvgósdav dsv asojdv odvbsd osad boj sdafbo´
+                            as dbijsa bisaj bgpiS GVBJSD IPVUB D´JV SDIJ VS´D VJSD VJBA  óisjd evjsd 
+                            lisaudbvpisudbvújdsbv´bsd´vo  isdpuyvbsd vs dviu asuedhf iuased sde  d posidyfv
+                            b pisdubíudsfs ipdv sdvipbsdv sdpiv dvpdsv asd vd vspiduv d sdvpdv pdsiuv bdsvi
+                        </p>
+
+                        <h5 id="item1-2">Item 1-2</h5>
+                        <p>Testante menu vertical e seu oink com as informações contidades nas divs
+                            okdngksnaegkiasdng[]ksad ojksdbnvgósdav dsv asojdv odvbsd osad boj sdafbo´
+                            as dbijsa bisaj bgpiS GVBJSD IPVUB D´JV SDIJ VS´D VJSD VJBA  óisjd evjsd 
+                            lisaudbvpisudbvújdsbv´bsd´vo  isdpuyvbsd vs dviu asuedhf iuased sde  d posidyfv
+                            b pisdubíudsfs ipdv sdvipbsdv sdpiv dvpdsv asd vd vspiduv d sdvpdv pdsiuv bdsvi
+                        </p>
+
+                        <h4 id="item2">Item 02</h4>
+                        <p>Testante menu vertical e seu oink com as informações contidades nas divs
+                            okdngksnaegkiasdng[]ksad ojksdbnvgósdav dsv asojdv odvbsd osad boj sdafbo´
+                            as dbijsa bisaj bgpiS GVBJSD IPVUB D´JV SDIJ VS´D VJSD VJBA  óisjd evjsd 
+                            lisaudbvpisudbvújdsbv´bsd´vo  isdpuyvbsd vs dviu asuedhf iuased sde  d posidyfv
+                            b pisdubíudsfs ipdv sdvipbsdv sdpiv dvpdsv asd vd vspiduv d sdvpdv pdsiuv bdsvi
+                        </p>
+
+                        <h4 id="item3">Item 03</h4>
+                        <p>Testante menu vertical e seu oink com as informações contidades nas divs
+                            okdngksnaegkiasdng[]ksad ojksdbnvgósdav dsv asojdv odvbsd osad boj sdafbo´
+                            as dbijsa bisaj bgpiS GVBJSD IPVUB D´JV SDIJ VS´D VJSD VJBA  óisjd evjsd 
+                            lisaudbvpisudbvújdsbv´bsd´vo  isdpuyvbsd vs dviu asuedhf iuased sde  d posidyfv
+                            b pisdubíudsfs ipdv sdvipbsdv sdpiv dvpdsv asd vd vspiduv d sdvpdv pdsiuv bdsvi
+                        </p>
+
+                        <h5 id="item3-1">Item 3-1</h5>
+                        <p>Testante menu vertical e seu oink com as informações contidades nas divs
+                            okdngksnaegkiasdng[]ksad ojksdbnvgósdav dsv asojdv odvbsd osad boj sdafbo´
+                            as dbijsa bisaj bgpiS GVBJSD IPVUB D´JV SDIJ VS´D VJSD VJBA  óisjd evjsd 
+                            lisaudbvpisudbvújdsbv´bsd´vo  isdpuyvbsd vs dviu asuedhf iuased sde  d posidyfv
+                            b pisdubíudsfs ipdv sdvipbsdv sdpiv dvpdsv asd vd vspiduv d sdvpdv pdsiuv bdsvi
+                        </p>
+
+                        <h5 id="item3-2">Item 3-2</h5>
+                        <p>Testante menu vertical e seu oink com as informações contidades nas divs
+                            okdngksnaegkiasdng[]ksad ojksdbnvgósdav dsv asojdv odvbsd osad boj sdafbo´
+                            as dbijsa bisaj bgpiS GVBJSD IPVUB D´JV SDIJ VS´D VJSD VJBA  óisjd evjsd 
+                            lisaudbvpisudbvújdsbv´bsd´vo  isdpuyvbsd vs dviu asuedhf iuased sde  d posidyfv
+                            b pisdubíudsfs ipdv sdvipbsdv sdpiv dvpdsv asd vd vspiduv d sdvpdv pdsiuv bdsvi
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
